@@ -41,7 +41,7 @@
                         <tr th:each="prod : ${products}">
                             <td>
                                 <a th:href="@{/product/__${prod.id}__}" th:text="${prod.name}"></a></td>
-                            <td th:text="${prod.price}"></td>
+                            <td class="text-right" th:text="${prod.price}"></td>
                         </tr>
                     </tbody>
                 </table>
